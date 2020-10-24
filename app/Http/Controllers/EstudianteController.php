@@ -20,7 +20,7 @@ class EstudianteController extends Controller
     {
         $Estudiantes=Estudiante::orderBy('id', 'desc')->paginate();
              //   dd($Estudiantes);
-        return view('Estudiantes.index',compact ('Estudiantes',$Estudiantes)  );
+        return view('estudiantes.index',compact ('Estudiantes',$Estudiantes)  );
     }
 
     /**
